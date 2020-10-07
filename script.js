@@ -42,9 +42,12 @@ for (var i = 0; i < workDayHours.length; i++) {
   }
 }
 saveBtn.on("click", function() {
-var saveSchedule = ($(this).val())
-localStorage.setItem("save", saveSchedule.val());
-localStorage.getItem("save");
+var schedule = JSON.parse(localStorage.getItem("input"));
+localStorage.setItem("input", JSON.stringify(textInput));
+hourEl.textContent = ("input", schedule);
 // localStorage.setItem(saveSchedule, storeSchedule)
 console.log(saveBtn)
 })
+for (var i = 0; i < workDayHours.length; i ++) {
+$(workDayHours).val(localStorage.getItem(workDayHours));
+}
