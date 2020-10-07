@@ -22,7 +22,7 @@ for (var i = 0; i < workDayHours.length; i++) {
   var hourEl = $("<div>")
     .addClass("hour col-sm-1")
     .attr("id", "H" + workDayHours[i]);
-  var textInput = $("<input>").addClass("col-sm-10");
+  var textInput = $("<input>").addClass("col-sm-9");
   var saveBtn = $("<button>").attr("class", "saveBtn fas fa-save col-1");
   timeEl.append(hourEl, textInput, saveBtn);
   timeBlock.append(timeEl);
@@ -41,13 +41,20 @@ for (var i = 0; i < workDayHours.length; i++) {
     textInput.addClass("present");
   }
 }
-saveBtn.on("click", function() {
-var schedule = JSON.parse(localStorage.getItem("input"));
-localStorage.setItem("input", JSON.stringify(textInput));
-hourEl.textContent = ("input", schedule);
-// localStorage.setItem(saveSchedule, storeSchedule)
-console.log(saveBtn)
-})
-for (var i = 0; i < workDayHours.length; i ++) {
-$(workDayHours).val(localStorage.getItem(workDayHours));
-}
+
+localStorage.setItem("input", JSON.stringify(input));
+var savedSchedule = JSON.parse(localStorage.getItem("input"));
+textInput.textContent = savedSchedule;
+
+
+// // console.log(storeSchedule);
+// // var element = target.rev("input");
+// // var textInfo = element.val();
+// // var index = element.attr("id");
+ 
+// // savedSchedule.push({ index: index, text: textInfo });
+// // localStorage.setItem("schedule", JSON.stringify(savedSchedule));
+
+// // localStorage.setItem(saveSchedule, storeSchedule)
+// console.log(saveBtn)
+
