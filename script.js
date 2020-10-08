@@ -42,19 +42,35 @@ for (var i = 0; i < workDayHours.length; i++) {
   }
 }
 
-localStorage.setItem("input", JSON.stringify(input));
-var savedSchedule = JSON.parse(localStorage.getItem("input"));
-textInput.textContent = savedSchedule;
-
+// let storageArray = JSON.parse(localStorage.getItem("stored")) || [
+//   {},
+//   {},
+//   {},
+//   {},
+//   {},
+//   {},
+//   {},
+//   {},
+//   {},
+// ];
+saveBtn.on("click", function () {
+//   var schedule = ($(this).siblings("input").val());
+//   var savedItem = ($(this).siblings(".hour").attr("id"))
+ 
+  localStorage.setItem("input", "hour");
+  console.log(saveBtn);
+  console.log("input", "hour");
+//   console.log($(this).siblings("input").val());
+//   console.log($(this).siblings(".hour").attr("id"))
+});
 
 // // console.log(storeSchedule);
 // // var element = target.rev("input");
 // // var textInfo = element.val();
 // // var index = element.attr("id");
- 
+
 // // savedSchedule.push({ index: index, text: textInfo });
 // // localStorage.setItem("schedule", JSON.stringify(savedSchedule));
 
 // // localStorage.setItem(saveSchedule, storeSchedule)
 // console.log(saveBtn)
-
