@@ -65,16 +65,16 @@ $(".saveBtn").on("click", function () {
 //   console.log($(this).siblings(".hour").attr("id"))
 });
 
-$("#H900AM").siblings("input").val(localStorage.getItem("H900AM"))
-$("#H1000AM").siblings("input").val(localStorage.getItem("H1000AM"))
-$("#H1100AM").siblings("input").val(localStorage.getItem("H1100AM"))
-$("#H1200AM").siblings("input").val(localStorage.getItem("H1200AM"))
-$("#H100PM").siblings("input").val(localStorage.getItem("H100PM"))
-$("#H200PM").siblings("input").val(localStorage.getItem("H200PM"))
-$("#H300PM").siblings("input").val(localStorage.getItem("H300PM"))
-$("#H400PM").siblings("input").val(localStorage.getItem("H400PM"))
-$("#H500PM").siblings("input").val(localStorage.getItem("H500PM"))
-console.log($("#H900AM").siblings("input"))
+$("#H900AM").siblings("input").val(localStorage.getItem("H900AM"));
+$("#H1000AM").siblings("input").val(localStorage.getItem("H1000AM"));
+$("#H1100AM").siblings("input").val(localStorage.getItem("H1100AM"));
+$("#H1200AM").siblings("input").val(localStorage.getItem("H1200AM"));
+$("#H100PM").siblings("input").val(localStorage.getItem("H100PM"));
+$("#H200PM").siblings("input").val(localStorage.getItem("H200PM"));
+$("#H300PM").siblings("input").val(localStorage.getItem("H300PM"));
+$("#H400PM").siblings("input").val(localStorage.getItem("H400PM"));
+$("#H500PM").siblings("input").val(localStorage.getItem("H500PM"));
+console.log($("#H900AM").siblings("input"));
 // // console.log(storeSchedule);
 // // var element = target.rev("input");
 // // var textInfo = element.val();

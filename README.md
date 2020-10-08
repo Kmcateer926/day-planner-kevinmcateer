@@ -8,11 +8,17 @@ screenshot
 ![Alt text](assets\screenshot.png) 
 # usage
 
-open application at https://kmcateer926.github.io/day-planner-kevinmcateer/
-you will see a daily planner 
-the current time will be highlighted red
-the future time will be highlighted green
-the past time will be grey
-input your scheduled event in the given time and click the save button to the right
-upon refresh, your scheduled event will remain on the screen for future use
+-open application at https://kmcateer926.github.io/day-planner-kevinmcateer/
+
+-you will see a daily planner.
+
+-the current time will be highlighted red.
+
+-the future time will be highlighted green.
+
+-the past time will be grey.
+
+-input your scheduled event in the given time and click the save button to the right.
+
+-upon refresh, your scheduled event will remain on the screen for future use.
 
